@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title data-i18n="title"></title>
+    <meta name="description" content="Stripe Checkout Global Demo" />
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/global.css" />
+    <!-- Load Stripe.js on your website. -->
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="./script.js" defer></script>
+  </head>
+
+  <body>
+    <div class="container mx-auto py-20 px-4">
+      <header class="header">
+        <h1>Stripe Checkout Global Demo</h1>
+      </header>
+
+      <div class="error">
+        <pre class="error-text"></pre>
+      </div>
+
+      <div class="grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-20">
+        <div class="h-full">
+          <div class="rounded overflow-hidden shadow-lg">
+            <div class="px-6 py-4 text-center">
+              <img class="w-1/6 mx-auto" src="flag-us.svg" />
+              <div class="font-bold text-xl mb-2">US customer</div>
+              <p class="text-gray-700 text-base h-10">
+                Includes cards, Apple Pay and Google Pay.
+              </p>
+            </div>
+            <div class="px-6 py-4">
+              <button
+                class="hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-center mx-auto block"
+                data-locale="en"
+              >
+                Checkout
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="h-full">
+          <div class="rounded overflow-hidden shadow-lg">
+            <div class="px-6 py-4 text-center">
+              <img class="w-1/6 mx-auto" src="flag-uk.svg" />
+              <div class="font-bold text-xl mb-2">UK Customer</div>
+              <p class="text-gray-700 text-base h-10">
+                Using checkout to setup Bascs Debit payments.
+              </p>
+            </div>
+            <div class="px-6 py-4">
+              <button
+                class="hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-center mx-auto block"
+                data-locale="uk"
+              >
+                Checkout
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="h-full">
+          <div class="rounded overflow-hidden shadow-lg">
+            <div class="px-6 py-4 text-center">
+              <img class="w-1/6 mx-auto" src="flag-nl.svg" />
+              <div class="font-bold text-xl mb-2">NL Customer</div>
+              <p class="text-gray-700 text-base h-10">
+                NL-localized payments form including iDEAL.
+              </p>
+            </div>
+            <div class="px-6 py-4">
+              <button
+                class="hover:bg-blue-700 text-white font-bold py-2 px-4 text-center mx-auto block"
+                data-locale="nl"
+              >
+                Checkout
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

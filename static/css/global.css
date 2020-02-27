@@ -1,0 +1,38 @@
+/* Variables */
+:root {
+  --body-color: rgb(247, 250, 252);
+  --button-color: rgb(30, 166, 114);
+  --accent-color: #0a721b;
+  --link-color: #ffffff;
+  --font-color: rgb(105, 115, 134);
+  --body-font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  --radius: 6px;
+  --form-width: 400px;
+}
+
+/* Base */
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--body-font-family);
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Layout */
+.sr-root {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 980px;
+  padding: 48px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+button {
+  background-color: #6a75d8;
+}
