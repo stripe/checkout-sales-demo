@@ -38,12 +38,12 @@ app.post("/checkout-session", async (req, res) => {
     const { locale } = req.body;
     let paymentMethods = ["card"];
 
-    if (locale == "nl") {
+    if (locale === "nl") {
       paymentMethods.push("ideal");
       currency = "EUR";
     }
 
-    if (locale == "uk") {
+    if (locale === "uk") {
       paymentMethods.push("bacs_debit");
       currency = "GBP";
     }
@@ -78,5 +78,5 @@ app.post("/checkout-session", async (req, res) => {
 });
 
 app.listen(port, () =>
-  console.log(`Node server listening on http://localhost:${port}!`)
+  console.log(`Server listening on http://localhost:${port}!`)
 );
