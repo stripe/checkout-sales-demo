@@ -16,70 +16,122 @@
     <script src="./script.js" defer></script>
   </head>
 
-  <body>
-    <div class="container mx-auto py-20 px-4">
+  <body class="antialiased flex items-center justify-center">
+    <div class="container mx-auto py-10 sm:py-20 lg:py-32 px-6 sm:px-10">
       <header class="header">
-        <h1>Stripe Checkout with multiple locales</h1>
+        <p class="uppercase font-medium tracking-wide">Stripe Checkout Demo</p>
+        <h1 class="font-bold leading-tight md:leading-normal">Checkout across the world</h1>
       </header>
 
       <div class="error">
         <pre class="error-text"></pre>
       </div>
 
-      <div class="grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-20">
-        <div class="h-full">
-          <div class="rounded overflow-hidden shadow-lg">
-            <div class="px-6 py-4 text-center">
+      <div class="grid gap-6 sm:gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-10 sm:py-20">
+        <div class="card bg-white h-full rounded-lg overflow-hidden">
+          <div>
+            <div class="px-6 pt-6 text-center">
               <img class="w-1/6 mx-auto" src="flag-us.svg" />
-              <div class="font-bold text-xl mb-2">US customer</div>
+              <div class="font-bold text-2xl mb-2">US Customer</div>
               <p class="text-gray-700 text-base h-10">
-                Includes cards, Apple Pay and Google Pay.
+                English language, wallets, and cards.
               </p>
             </div>
-            <div class="px-6 py-4">
+            <div class="px-6 pt-3 pb-8">
               <button
-                class="hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-center mx-auto block"
+                class="text-white font-semibold py-2 px-5 rounded text-center mx-auto block"
                 data-locale="en"
-              >
-                Checkout
+              >Checkout
               </button>
             </div>
           </div>
         </div>
-        <div class="h-full">
-          <div class="rounded overflow-hidden shadow-lg">
-            <div class="px-6 py-4 text-center">
-              <img class="w-1/6 mx-auto" src="flag-uk.svg" />
-              <div class="font-bold text-xl mb-2">UK Customer</div>
+        <div class="card bg-white h-full rounded-lg overflow-hidden">
+          <div>
+            <div class="px-6 pt-8 text-center">
+              <img class="w-1/6 mx-auto" src="flag-de.svg" />
+              <div class="font-bold text-2xl mb-2">DE Customer</div>
               <p class="text-gray-700 text-base h-10">
-                Using checkout to setup Bascs Debit payments.
+                German language, wallets, and cards.
               </p>
             </div>
-            <div class="px-6 py-4">
+            <div class="px-6 pt-3 pb-8">
               <button
-                class="hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-center mx-auto block"
-                data-locale="uk"
-              >
-                Checkout
+                class="text-white font-semibold py-2 px-5 rounded text-center mx-auto block"
+                data-locale="de"
+              >Checkout
               </button>
             </div>
           </div>
         </div>
-        <div class="h-full">
-          <div class="rounded overflow-hidden shadow-lg">
-            <div class="px-6 py-4 text-center">
+        <div class="card bg-white h-full rounded-lg overflow-hidden">
+          <div>
+            <div class="px-6 pt-8 text-center">
               <img class="w-1/6 mx-auto" src="flag-nl.svg" />
-              <div class="font-bold text-xl mb-2">NL Customer</div>
+              <div class="font-bold text-2xl mb-2">NL Customer</div>
               <p class="text-gray-700 text-base h-10">
-                NL-localized payments form including iDEAL.
+                Dutch language, wallets, cards, and iDEAL.
               </p>
             </div>
-            <div class="px-6 py-4">
+            <div class="px-6 pt-3 pb-8">
               <button
-                class="hover:bg-blue-700 text-white font-bold py-2 px-4 text-center mx-auto block"
+                class="text-white font-semibold py-2 px-5 rounded text-center mx-auto block"
                 data-locale="nl"
-              >
-                Checkout
+              >Checkout
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-white h-full rounded-lg overflow-hidden">
+          <div>
+            <div class="px-6 pt-8 text-center">
+              <img class="w-1/6 mx-auto" src="flag-at.svg" />
+              <div class="font-bold text-2xl mb-2">AT Customer</div>
+              <p class="text-gray-700 text-base h-10">
+                Polish language, wallets, and cards.
+              </p>
+            </div>
+            <div class="px-6 pt-3 pb-8">
+              <button
+                class="text-white font-semibold py-2 px-5 rounded text-center mx-auto block"
+                data-locale="at"
+              >Checkout
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-white h-full rounded-lg overflow-hidden">
+          <div>
+            <div class="px-6 pt-8 text-center">
+              <img class="w-1/6 mx-auto" src="flag-be.svg" />
+              <div class="font-bold text-2xl mb-2">BE Customer</div>
+              <p class="text-gray-700 text-base h-10">
+                Polish language, wallets, and cards.
+              </p>
+            </div>
+            <div class="px-6 pt-3 pb-8">
+              <button
+                class="text-white font-semibold py-2 px-5 rounded text-center mx-auto block"
+                data-locale="be"
+              >Checkout
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-white h-full rounded-lg overflow-hidden">
+          <div>
+            <div class="px-6 pt-8 text-center">
+              <img class="w-1/6 mx-auto" src="flag-pl.svg" />
+              <div class="font-bold text-2xl mb-2">PL Customer</div>
+              <p class="text-gray-700 text-base h-10">
+                Polish language, wallets, and cards.
+              </p>
+            </div>
+            <div class="px-6 pt-3 pb-8">
+              <button
+                class="text-white font-semibold py-2 px-5 rounded text-center mx-auto block"
+                data-locale="pl"
+              >Checkout
               </button>
             </div>
           </div>
