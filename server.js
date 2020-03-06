@@ -52,7 +52,7 @@ app.post("/checkout-session", async (req, res) => {
       currency = "EUR";
     }
 
-    if (locale === "sy") {
+    if (locale === "at") {
       currency = "EUR";
     }
 
