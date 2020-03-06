@@ -48,6 +48,22 @@ app.post("/checkout-session", async (req, res) => {
       currency = "GBP";
     }
 
+    if (locale === "de") {
+      currency = "EUR";
+    }
+
+    if (locale === "sy") {
+      currency = "EUR";
+    }
+
+    if (locale === "be") {
+      currency = "EUR";
+    }
+
+    if (locale === "pl") {
+      currency = "PLN";
+    }
+
     const quantity = 2;
 
     const session = await stripe.checkout.sessions.create({
