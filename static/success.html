@@ -19,39 +19,45 @@
         <div class="sr-main">
           <div class="sr-payment-summary completed-view">
             <header class="header pb-8">
-              <p class="uppercase font-medium tracking-wide"><a href="/">Stripe Checkout Demo</a></p>
-              <h1 class="font-bold leading-tight md:leading-normal">Your payment succeeded</h1>
+              <p class="uppercase font-medium tracking-wide">
+                <a href="/">Stripe Checkout Demo</a>
+              </p>
+              <h1 class="font-bold leading-tight md:leading-normal">
+                Your payment succeeded
+              </h1>
             </header>
             <h4 class="pb-4">
-              View CheckoutSession response:</a>
+              View CheckoutSession response:
             </h4>
-            </div>
             <div class="sr-section completed-view">
-              <div class="sr-callout pb-4">
-                <pre class="text-sm p-8 bg-gray-200">
-      
-                </pre>
-              </div>   
-              <button class="text-white font-semibold py-2 px-5 rounded text-center block">
+              <div class="sr-callout pb-6">
+                <pre class="overflow-y-auto text-xs p-8 bg-gray-300 rounded" style="max-height: 20rem;"></pre>
+              </div>
+              <button
+                class="text-white font-semibold py-2 px-5 rounded text-center block"
+              >
                 <a href="/">Restart demo</a>
-              </button>       
-            </div> 
-          </div> 
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
     <script>
       var urlParams = new URLSearchParams(window.location.search);
-      var sessionId = urlParams.get("session_id")
+      var sessionId = urlParams.get("session_id");
       if (sessionId) {
-        fetch("/checkout-session?sessionId=" + sessionId).then(function(result){
-          return result.json()
-        }).then(function(session){
-          var sessionJSON = JSON.stringify(session, null, 2);
-          document.querySelector("pre").textContent = sessionJSON;
-        }).catch(function(err){
-          console.log('Error when fetching Checkout session', err);
-        });
+        fetch("/checkout-session?sessionId=" + sessionId)
+          .then(function(result) {
+            return result.json();
+          })
+          .then(function(session) {
+            var sessionJSON = JSON.stringify(session, null, 2);
+            document.querySelector("pre").textContent = sessionJSON;
+          })
+          .catch(function(err) {
+            console.log("Error when fetching Checkout session", err);
+          });
       }
     </script>
   </body>

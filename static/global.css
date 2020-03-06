@@ -4,22 +4,34 @@
   --button-color: rgb(30, 166, 114);
   --accent-color: #0a721b;
   --link-color: #ffffff;
-  --font-color: #32325D;
+  --font-color: #32325d;
   --body-font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   --radius: 6px;
   --form-width: 400px;
+  --delay: 0.4s;
 }
 
 /* Base */
 * {
   box-sizing: border-box;
 }
+
 body {
   font-family: var(--body-font-family);
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   background-color: var(--body-color);
   color: var(--font-color);
+}
+
+@keyframes fadeUpIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }
 
 /* Layout */
@@ -31,6 +43,12 @@ body {
   padding: 48px;
 } */
 
+header {
+  opacity: 0;
+  transform: translateY(0.5rem);
+  animation: fadeUpIn 0.6s calc(var(--delay) - 0.1s) ease forwards;
+}
+
 header p {
   color: #6772e5;
 }
@@ -41,55 +59,48 @@ h1 {
 
 button {
   background-color: #6772e5;
-  box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
   transition: all 0.15s ease;
 }
 
 button:focus,
 button:hover {
   background-color: #737efa;
-  box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+  box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
   transform: translateY(-1px);
 }
 
 .card {
-  --delay: 0.4s;
+  --delay: 0.8s;
+  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.125),
+    0 8px 16px -8px rgba(0, 0, 0, 0.15), 0 -6px 16px -6px rgba(0, 0, 0, 0.02);
   opacity: 0;
   transform: translateY(1rem);
-  transition-delay: var(--delay);
   will-change: transform;
-  box-shadow: 0 13px 27px -5px rgba(50,50,93,.125), 0 8px 16px -8px rgba(0,0,0,.15), 0 -6px 16px -6px rgba(0,0,0,.020);
-  transition: all 0.6s var(--delay) ease;
-}
-
-.loaded .card {
-  opacity: 1;
-  transform: none;
+  animation: fadeUpIn 0.6s var(--delay) ease forwards;
 }
 
 .card:nth-child(2) {
-  transition-delay: calc(var(--delay) + 0.1s);
+  animation-delay: calc(var(--delay) + 0.1s);
 }
-
 .card:nth-child(3) {
-  transition-delay: calc(var(--delay) + 0.15s);
+  animation-delay: calc(var(--delay) + 0.15s);
 }
-
 .card:nth-child(4) {
-  transition-delay: calc(var(--delay) + 0.2s);
+  animation-delay: calc(var(--delay) + 0.2s);
 }
 .card:nth-child(5) {
-  transition-delay: calc(var(--delay) + 0.25s);
+  animation-delay: calc(var(--delay) + 0.25s);
 }
 .card:nth-child(6) {
-  transition-delay: calc(var(--delay) + 0.3s);
+  animation-delay: calc(var(--delay) + 0.3s);
 }
 .card:nth-child(7) {
-  transition-delay: calc(var(--delay) + 0.35s);
+  animation-delay: calc(var(--delay) + 0.35s);
 }
 .card:nth-child(8) {
-  transition-delay: calc(var(--delay) + 0.4s);
+  animation-delay: calc(var(--delay) + 0.4s);
 }
 .card:nth-child(9) {
-  transition-delay: calc(var(--delay) + 0.45s);
+  animation-delay: calc(var(--delay) + 0.45s);
 }
