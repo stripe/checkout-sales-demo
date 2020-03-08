@@ -75,7 +75,7 @@ app.post("/checkout-session", async (req, res) => {
           images: ["https://zbx1k.sse.codesandbox.io/chairs.png"],
           quantity: quantity,
           currency: currency,
-          amount: 89000
+          amount: 8900
         }
       ],
       success_url: `${domainURL}/success.html?session_id={CHECKOUT_SESSION_ID}`,
