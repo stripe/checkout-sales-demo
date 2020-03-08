@@ -71,11 +71,11 @@ app.post("/checkout-session", async (req, res) => {
       locale: locale,
       line_items: [
         {
-          name: "Pasha photo",
-          images: ["https://picsum.photos/300/300?random=4"],
+          name: "Kitchen counter stools",
+          images: ["https://zbx1k.sse.codesandbox.io/chairs.png"],
           quantity: quantity,
           currency: currency,
-          amount: 10000
+          amount: 89000
         }
       ],
       success_url: `${domainURL}/success.html?session_id={CHECKOUT_SESSION_ID}`,
