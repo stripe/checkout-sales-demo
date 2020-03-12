@@ -1,8 +1,10 @@
-# Checkout with multiple locales
+# Sales demo of Stripe Checkout
+
+Sales demo of Stripe Checkout with different locales around the world. 
 
 ![Checkout across the world](checkout_accross_the_world.png)
 
-This samople shows you how to easily create a checkout session to see what Checkout might look like for customers from around the world:
+This demo shows you how to easily create a checkout session to see what Checkout might look like for customers from around the world:
 
 - US: English; USD; cards, Apple Pay & Google Pay
 - DE: German; EUR; cards, Apple Pay & Google Pay (soon: Giropay)
