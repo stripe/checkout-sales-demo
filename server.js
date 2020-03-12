@@ -52,11 +52,11 @@ app.post("/checkout-session", async (req, res) => {
       currency = "EUR";
     }
 
-    if (locale === "at") {
-      currency = "EUR";
+    if (locale === "ms") {
+      currency = "MYR";
     }
 
-    if (locale === "be") {
+    if (locale === "fr") {
       currency = "EUR";
     }
 
@@ -72,7 +72,7 @@ app.post("/checkout-session", async (req, res) => {
       line_items: [
         {
           name: "Kitchen counter stools",
-          images: ["https://zbx1k.sse.codesandbox.io/chairs.png"],
+          images: ["https://stripe.com/img/v3/checkout/chairs.jpg"],
           quantity: quantity,
           currency: currency,
           amount: 8900
