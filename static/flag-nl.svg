@@ -1,8 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-  <g fill="none" fill-rule="evenodd" transform="translate(0 2)">
-    <polygon fill="#F6F9FC" fill-rule="nonzero" points="0 4 16 4 16 8 0 8"/>
-    <path fill="#EAEEF3" fill-rule="nonzero" d="M15,8 L15,4 L16,4 L16,8 L15,8 Z M0,4 L1,4 L1,8 L0,8 L0,4 Z"/>
-    <path fill="#E25950" d="M16,2 L16,4 L0,4 L0,2 C0,0.8954305 0.8954305,0 2,0 L14,0 C15.1045695,0 16,0.8954305 16,2 Z"/>
-    <path fill="#43458B" fill-rule="nonzero" d="M0,10 L0,8 L16,8 L16,10 C16,11.1045695 15.1045695,12 14,12 L2,12 C0.8954305,12 0,11.1045695 0,10 Z"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="21" height="15" viewBox="0 0 21 15">
+  <title>NL</title>
+  <g>
+    <polygon points="0 4 21 4 21 11 0 11 0 4" fill="#f6f9fc"/>
+    <path d="M20,11V4h1v7ZM0,4H1v7H0Z" fill="#8898aa" opacity="0.1" style="isolation: isolate"/>
+    <path d="M21,2V5H0V2A2,2,0,0,1,2,0H19A2,2,0,0,1,21,2Z" fill="#e25950"/>
+    <path d="M0,13V10H21v3a2,2,0,0,1-2,2H2A2,2,0,0,1,0,13Z" fill="#6772e5"/>
   </g>
 </svg>

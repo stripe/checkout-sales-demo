@@ -1,1 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g fill="none" fill-rule="evenodd"><path fill="#333" d="M2.005 2A2.008 2.008 0 0 0 0 4.009v7.982C0 13.101.894 14 2.005 14H5V2H2.005z"></path><path fill="#E25950" d="M11 2v12h2.995A2.008 2.008 0 0 0 16 11.991V4.01C16 2.899 15.106 2 13.995 2H11z"></path><path fill="#FCD669" d="M5 2h6v12H5z"></path><path fill="#A68527" fill-opacity=".1" fill-rule="nonzero" d="M5 14v-1h6v1H5zM5 2h6v1H5V2z"></path></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="21" height="15" viewBox="0 0 21 15">
+  <title>BE</title>
+  <g>
+    <polygon points="6 0 15 0 15 15 6 15 6 0" fill="#fcd669"/>
+    <path d="M2,0H7V15H2a2,2,0,0,1-2-2V2A2,2,0,0,1,2,0Z" fill="#333"/>
+    <path d="M19,15H14V0h5a2,2,0,0,1,2,2V13A2,2,0,0,1,19,15Z" fill="#e25950"/>
+  </g>
+</svg>
