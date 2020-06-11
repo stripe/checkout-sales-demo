@@ -49,11 +49,13 @@ app.post("/checkout-session", async (req, res) => {
     }
 
     if (locale === "de") {
+      paymentMethods.push("giropay");
       currency = "EUR";
     }
 
-    if (locale === "ms") {
-      currency = "MYR";
+    if (locale === "be") {
+      paymentMethods.push("bancontact");
+      currency = "EUR";
     }
 
     if (locale === "fr") {
@@ -61,6 +63,7 @@ app.post("/checkout-session", async (req, res) => {
     }
 
     if (locale === "pl") {
+      paymentMethods.push("p24");
       currency = "PLN";
     }
 
