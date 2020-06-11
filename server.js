@@ -53,13 +53,13 @@ app.post("/checkout-session", async (req, res) => {
       currency = "EUR";
     }
 
-    if (locale === "be") {
+    if (locale === "fr") {
       paymentMethods.push("bancontact");
       currency = "EUR";
     }
 
-    if (locale === "fr") {
-      currency = "EUR";
+    if (locale === "ms") {
+      currency = "MYR";
     }
 
     if (locale === "pl") {
