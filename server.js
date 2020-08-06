@@ -23,6 +23,7 @@ app.get("/config", (req, res) => {
     currency: process.env.CURRENCY
   });
 });
+//
 
 app.get("/checkout-session", async (req, res) => {
   const { sessionId } = req.query;
