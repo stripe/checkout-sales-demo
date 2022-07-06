@@ -1,6 +1,6 @@
 # Moved to stripe-samples
 
-Stripe maintains many sample applications to demonstrate our various products.  You can find all of the up-to-date versions in the [stripe-samples](https://github.com/stripe-samples) organization, here are some payment flows which use Stripe Checkout:
+Stripe maintains sample applications for various products, you can browse all the up-to-date versions in the [stripe-samples](https://github.com/stripe-samples) organization.  Here are some payment flows using Stripe Checkout:
 
 - [Quickly collect one-time payments](https://github.com/stripe-samples/checkout-one-time-payments)
 - [Combine Checkout and Billing for fast subscription pages](https://github.com/stripe-samples/checkout-single-subscription)
