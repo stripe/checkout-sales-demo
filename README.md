@@ -1,4 +1,4 @@
-# Moved to @stripe-samples
+# Moved to stripe-samples
 
 Stripe maintains many sample applications to demonstrate our various products.  You can find all of the up-to-date versions in the [stripe-samples](https://github.com/stripe-samples) organization, here are some payment flows which use Stripe Checkout:
 
