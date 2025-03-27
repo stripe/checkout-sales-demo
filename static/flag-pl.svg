@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="21" height="15" viewBox="0 0 21 15">
-  <title>PL</title>
-  <g>
-    <rect x="1" y="0.89" width="19" height="6.35" fill="#fff"/>
-    <path d="M.5,7.5h20V2A1.5,1.5,0,0,0,19,.5H2A1.5,1.5,0,0,0,.5,2Z" fill="none" stroke="#dfe5eb"/>
-    <path d="M0,7v6a2,2,0,0,0,2,2H19a2,2,0,0,0,2-2V7Z" fill="#e25950"/>
-  </g>
-</svg>

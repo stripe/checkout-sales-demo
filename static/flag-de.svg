@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="21" height="15" viewBox="0 0 21 15">
-  <title>DE</title>
-  <g>
-    <polygon points="0 4 21 4 21 11 0 11 0 4" fill="#e25950"/>
-    <path d="M0,13V10H21v3a2,2,0,0,1-2,2H2A2,2,0,0,1,0,13Z" fill="#fcd669"/>
-    <path d="M21,2V5H0V2A2,2,0,0,1,2,0H19A2,2,0,0,1,21,2Z" fill="#333"/>
-  </g>
-</svg>
