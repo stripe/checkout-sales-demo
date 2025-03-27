@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="21" height="15" viewBox="0 0 21 15">
+  <title>BE</title>
+  <g>
+    <polygon points="6 0 15 0 15 15 6 15 6 0" fill="#fcd669"/>
+    <path d="M2,0H7V15H2a2,2,0,0,1-2-2V2A2,2,0,0,1,2,0Z" fill="#333"/>
+    <path d="M19,15H14V0h5a2,2,0,0,1,2,2V13A2,2,0,0,1,19,15Z" fill="#e25950"/>
+  </g>
+</svg>

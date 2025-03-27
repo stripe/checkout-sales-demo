@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="21" height="15" viewBox="0 0 21 15">
+  <title>NL</title>
+  <g>
+    <polygon points="0 4 21 4 21 11 0 11 0 4" fill="#f6f9fc"/>
+    <path d="M20,11V4h1v7ZM0,4H1v7H0Z" fill="#8898aa" opacity="0.1" style="isolation: isolate"/>
+    <path d="M21,2V5H0V2A2,2,0,0,1,2,0H19A2,2,0,0,1,21,2Z" fill="#e25950"/>
+    <path d="M0,13V10H21v3a2,2,0,0,1-2,2H2A2,2,0,0,1,0,13Z" fill="#6772e5"/>
+  </g>
+</svg>
