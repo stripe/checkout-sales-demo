@@ -37,17 +37,26 @@
             <div class="px-6 pt-8 text-center">
               <img class="w-1/6 mx-auto my-2" src="flag-us.svg" />
               <div class="font-bold text-2xl">US customer</div>
-              <p class="text-gray-700 text-base h-10">
-                English; wallets and cards.
-              </p>
+              <div class="product">
+                <img
+                  src="https://i.imgur.com/EHyR2nP.png"
+                  alt="The cover of Stubborn Attachments"
+                />
+                <div class="description">
+                  <h3>Stubborn Attachments</h3>
+                  <h5>$20.00</h5>
+                </div>
+              </div>
             </div>
             <div class="px-6 pt-3 pb-8">
-              <button
-                class="text-white font-semibold py-2 px-5 rounded text-center mx-auto block"
-                data-locale="en"
-              >
-                Checkout
-              </button>
+              <form action="/create-checkout-session" method="POST">
+                <button
+                  class="text-white font-semibold py-2 px-5 rounded text-center mx-auto block"
+                  data-locale="en"
+                >
+                  Checkout
+                </button>
+              </form>
             </div>
           </div>
         </div>
