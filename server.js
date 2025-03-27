@@ -20,7 +20,7 @@ app.get("/config", (req, res) => {
   res.send({
     publicKey: process.env.STRIPE_PUBLISHABLE_KEY,
     basePrice: process.env.BASE_PRICE,
-    currency: process.env.CURRENCY,
+    currency: process.env.CURRENCY
   });
 });
 
@@ -75,26 +75,23 @@ app.post("/checkout-session", async (req, res) => {
       line_items: [
         {
           name: "Kitchen counter stools",
-          images: [
-            "https://cdn11.bigcommerce.com/s-tsmdqygn6r/images/stencil/2500x2500/products/1945/42465/81311-MRL-MY__59247.1693431361.jpg",
-          ],
+          images: ["https://stripe.com/img/v3/checkout/chairs.jpg"],
           quantity: quantity,
           currency: currency,
-          amount: 8900,
-        },
+          amount: 8900
+        }
       ],
-      mode: 'payment', // Add this line
       success_url: `${domainURL}/success.html?session_id={CHECKOUT_SESSION_ID}`,
-      cancel_url: `${domainURL}/canceled.html`,
+      cancel_url: `${domainURL}/canceled.html`
     });
 
     res.send({
-      sessionId: session.id,
+      sessionId: session.id
     });
   } catch (err) {
     res.status(500);
     res.send({
-      error: err.message,
+      error: err.message
     });
   }
 });
